@@ -1,0 +1,192 @@
+:root{
+  --heading-color:#512051;
+  --cardbg-color:#512051;
+  --verifiedcont-color:#EE69A4;
+  --subheading-color:#927B91;
+  --starbg-color:#F7F2F7;
+}
+
+*,
+*::after,
+*::before{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body{
+  font-family: "league spartan";
+  background-image: url(images/bg1.svg),
+  url(images/bg2.svg);
+background-position: top left, bottom right;
+background-repeat: no-repeat;
+color: white;
+}
+
+.wrapper{
+  max-width: 1110px;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+main{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 120px;
+}
+
+.tittle{
+font-family: "League Spartan", sans-serif;
+font-weight: 700;
+font-size: 56px;
+color: var(--heading-color);
+}
+
+.paragraph{
+  margin-top: 35px;
+  color: var(--subheading-color);
+  font-size: 19px;
+}
+
+.star1{
+  display: flex;
+  align-items: center;
+  background: var(--starbg-color);
+  padding:  20px 20px 20px 30px;
+  border-radius: 7px;
+  margin: 10px 80px 0px 0px;
+  color: var(--heading-color);
+  font-weight: bold;
+}
+
+.star2{
+  display: flex;
+  align-items: center;
+  background: var(--starbg-color);
+  padding:  20px 20px 20px 30px;
+  border-radius: 7px;
+  margin: 15px 40px 0px 40px;
+  color: var(--heading-color);
+  font-weight: bold;
+}
+
+.star3{
+  display: flex;
+  align-items: center;
+  background: var(--starbg-color);
+  padding:  20px 20px 20px 30px;
+  border-radius: 7px;
+  margin: 15px 0px 0px 80px;
+  color: var(--heading-color);
+  font-weight: bold;
+}
+
+.star-content{
+  margin-left: 30px;
+}
+
+
+.buyer{
+  display: flex;
+  margin-top: 70px;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.buyer1,
+.buyer2,
+.buyer3{
+    width: 380px;
+    background-color: var(--cardbg-color);
+    padding: 35px;
+    border-radius: 10px;
+}
+
+.buyer-info{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.name{
+  font-size: bold;
+}
+
+.verified{
+  color: var(--verifiedcont-color);
+}
+
+.review{
+font-weight: 500;
+font-size: 17px;
+margin-top: 30px;
+line-height: 22px;
+}
+
+
+@media(max-width:640px){
+  .wrapper{
+    padding: 0 24px;
+    align-items: center;
+  }
+
+  main{
+    flex-direction: column;
+  }
+
+  
+  .buyer{
+    flex-direction: column;
+  }
+  
+  .buyers-section{
+    
+  }
+  .tittle {
+    text-align: center;
+    font-size:40px ;
+  }
+
+  .paragraph {
+   font-size: 19px;
+   text-align: center;
+   overflow: hidden;
+  }
+
+    .stars{
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .star1,
+    .star2,
+    .star3 {
+        text-align: center;
+        display: block;
+        width: 100%;
+        margin: 20px 0px 0px 0px;
+        padding: 10px 10px;
+    }
+
+  .star1{
+    margin-left: 0px;
+    overflow: hidden;
+    margin-right: 0px;
+  }
+  
+  .star2{
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .star3{
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+ 
+
+
+}
